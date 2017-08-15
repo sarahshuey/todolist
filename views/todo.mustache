@@ -28,12 +28,11 @@
       <div class="row">
         <div class="col-xs-12">
           <ul>
-            <li>
-              {{#list}}
-              *{{todo}}
-              <!-- <input type="checkbox" checked> -->
-              {{/list}}
-            </li>
+              {{#name}}
+                <input type="checkbox">
+              {{.}}
+  <br>
+              {{/name}}
           </ul>
           <!-- TODO write your HTML/Mustache here -->
         </div>
