@@ -28,17 +28,18 @@
       <div class="row">
         <div class="col-xs-12">
           <ul>
-              {{#todos}}
+            {{#todos}}
+              <p>
               {{#done}}
-              <input type="checkbox" checked>
+                <input type="checkbox" checked>
+                <del>{{name}}</del>
               {{/done}}
-              <del>{{name}}</del>
-              <br>
+
               {{^done}}
-              <input type="checkbox">
-              {{name}}
+                <input type="checkbox"> {{name}}
               {{/done}}
-              {{/todos}}
+              </p>
+            {{/todos}}
 
           </ul>
         </div>
